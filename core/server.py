@@ -10,6 +10,8 @@ from sqlalchemy.exc import IntegrityError
 
 app.register_blueprint(student_assignments_resources, url_prefix='/student')
 app.register_blueprint(teacher_assignments_resources, url_prefix='/teacher')
+app.register_blueprint(principal_assignments_resources, url_prefix='/principal')
+
 
 
 @app.route('/')
